@@ -1,0 +1,137 @@
+* {
+    overflow: auto;         /* Permet de gérer le débordement de la colonne 2 du tableau*/
+}
+body {      /* Style de la page */
+    background-color: #82b0e9;
+    font-family: Arial;
+}
+
+p.categorie {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 9px 16px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+div.contenu {
+    background-color: white;
+    margin: 0px 10% 80px 10%;
+    padding: 30px;
+    min-width: 350px;   /*limite la taille de la page*/
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 13px;
+    margin-top: 0px;
+}
+
+p.description {
+    text-align: center; /* Permet de centrer*/
+    max-width: 400px;   /* Permet de limiter la largeur du texte*/
+    display: inline-block;  /*Permet de faire un block*/
+    font-size: 14px;
+}
+
+.centre {
+    text-align: center;
+    width: 100%;       /* Permet de caler l'image sur 100% de la page et ne pas sortir de la page*/
+}
+img.info {
+    display: block;     /* Permet d'utiliser toute la liigne */
+    max-height: 400px;  /* Taille maximale pour l'image*/
+    object-fit: cover;  /* Permet de ne pas déformer l'image en agrandissant la page*/
+}
+
+div.categorie {
+    margin-bottom: -18px;
+    margin-top: 60px;
+}
+
+div.separateur {
+    width: 100px;
+    height: 1px;
+    background-color: black;
+    margin-left: auto;      /*en jouant sur les margin left et right auto ça équilibre et donc c'est centré */
+    margin-right: auto;
+}
+
+table.infos {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: #6c829dc0;
+    height: 60px;
+}
+
+div.infos {  
+    position: relative;
+}
+
+table.infos td {
+    text-align: center;
+    font-size: 12px;
+    vertical-align: top;    /*Alignement vers haut de la cellule*/
+}
+
+table.infos th {
+    text-align: center;
+    font-size: 14px;
+    vertical-align: bottom;
+    padding-bottom: 7px;
+}
+div.colonne {
+    width: 45%;
+    margin-top: 15px;
+}
+div.colonne h2 {
+    text-align: center;
+    text-transform: uppercase;      /* Force le texte en majuscules*/
+    font-size: 15px;
+    border-bottom: 5px solid #6c829d;   /*Création bordure*/
+    padding-bottom: 5px;
+}
+div.colonne1 {
+    display: inline-block;
+    margin-right: 10%;
+}
+div.colonne2 {
+    float: right;       /* Affiche cette colonne à droite*/
+}
+div.ingredients p {
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid   lightgray;
+    padding: 8px 0;
+    margin-top: 1px;
+    margin-bottom: 4px;
+}
+table.preparation p.numero {
+    background-color: #6c829d;
+    color: white;
+    text-align: center;
+    height: 25px;
+    width: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 4px;
+    box-sizing: border-box;
+    border-radius: 50%;             /* Donne l'effet de bulle*/
+    margin: 0;
+}
+table.preparation td {
+    vertical-align: top;
+}
+table.preparation_detail {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+table.preparation tr {
+    height: 40px;          /* Dans une table vu comme un min-heigt*/
+}
